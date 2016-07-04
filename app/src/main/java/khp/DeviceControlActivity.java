@@ -250,6 +250,8 @@ public class  DeviceControlActivity extends Activity {
 // 3ème champ => no du profil en cours
             noC = come.substring(16, 18);
 //affichage de la valeur
+
+      //     kkkkk
  //           noCAff.setText(noC);
             ti = parseInt(noC);
 //affichage du no de courbe
