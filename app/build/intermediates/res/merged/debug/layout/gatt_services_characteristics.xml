@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#030000"
+    android:textAlignment="center"
+
+    android:editable="false"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:id="@+id/screen">
+
+
+
+
+    <Gallery
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:id="@+id/gallery"
+        android:background="@drawable/cot6"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:id="@+id/rpm"
+        android:layout_marginStart="10dp"
+
+        android:text="00000 rpm"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/gallery"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="152dp"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:id="@+id/speed"
+        android:layout_below="@+id/rpm"
+        android:layout_alignStart="@+id/rpm"
+        android:layout_marginTop="10dp"
+        android:text="000 km/h"
+        android:textColor="#ffffff"
+        android:textSize="28dp" />
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:id="@+id/swipeView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:id="@+id/retard"
+        android:text="0.0"
+        android:textColor="#fefefe"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:background="#030303"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/plusx"
+        android:onClick="plusClick"
+        android:layout_alignTop="@+id/retard"
+        android:layout_toLeftOf="@+id/retard"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/moinsx"
+        android:onClick="moinsClick"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/retard"
+        android:layout_toRightOf="@+id/retard"
+        android:layout_marginLeft="10dp" />
+
+
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:id="@+id/a4View"
+        android:src="@drawable/aig0"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/stopBut"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/stopBut"
+        android:background="@drawable/resetx"
+        android:onClick="stopClick"
+        android:layout_above="@+id/rpm"
+        android:layout_alignEnd="@+id/a4View" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/label"
+        android:textColor="#fd0202"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Bypass"
+        android:layout_below="@+id/leftBut" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/curveBut"
+        android:layout_below="@+id/gallery"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:background="@drawable/zerox"
+        android:onClick="curveClick" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/leftBut"
+        android:background="@drawable/fgauchex"
+        android:layout_below="@+id/a4View"
+        android:onClick="leftClick"
+        android:layout_alignLeft="@+id/label" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rightBut"
+        android:background="@drawable/fdroitex"
+        android:layout_below="@+id/a4View"
+        android:layout_alignEnd="@+id/label"
+        android:onClick="rightClick" />
+
+
+</RelativeLayout><!-- From: file:/C:/Users/ros/Documents/applisAndroid/khpApp040716/app/src/main/res/layout/gatt_services_characteristics.xml -->

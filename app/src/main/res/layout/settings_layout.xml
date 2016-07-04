@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:textAlignment="center"
+    android:clickable="true"
+
+    android:keepScreenOn="true"
+    android:id="@+id/back">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:id="@+id/swipeView1"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:background="#716f6f"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_below="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_marginTop="42dp"
+        android:background="#716f6f"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/editText"
+        android:text="Name"
+        android:textColor="#716f6f"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:editable="false"
+        android:enabled="false"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/editText2"
+        android:text="Password"
+        android:textColor="#716f6f"
+        android:editable="false"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:inputType="none" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/uploadBut"
+        android:background="@drawable/signin"
+        android:onClick="uploadClick"
+        android:contentDescription="upload button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
